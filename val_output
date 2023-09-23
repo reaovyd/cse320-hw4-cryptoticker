@@ -1,0 +1,17 @@
+ticker> ticker> ticker> ticker> ticker> ticker> ticker> ticker> ticker> 0	CLI(-1,0,1)
+1	bitstamp.net(153635,3,6) uwsc wss://ws.bitstamp.net [live_orders_btcusd]
+2	bitstamp.net(153636,4,8) uwsc wss://ws.bitstamp.net [live_orders_btcjpy]
+3	bitstamp.net(153637,5,10) uwsc wss://ws.bitstamp.net [live_orders_btccad]
+4	bitstamp.net(153638,7,12) uwsc wss://ws.bitstamp.net [live_orders_btcjpy]
+5	bitstamp.net(153639,9,14) uwsc wss://ws.bitstamp.net [live_orders_btccad]
+6	bitstamp.net(153640,11,16) uwsc wss://ws.bitstamp.net [live_orders_btcusd]
+7	bitstamp.net(153641,13,18) uwsc wss://ws.bitstamp.net [live_orders_btcjpy]
+8	bitstamp.net(153642,15,20) uwsc wss://ws.bitstamp.net [live_orders_btccad]
+ticker> ticker> ticker> ticker> ticker> ticker> 0	CLI(-1,0,1)
+1	bitstamp.net(153635,3,6) uwsc wss://ws.bitstamp.net [live_orders_btcusd]
+2	bitstamp.net(153636,4,8) uwsc wss://ws.bitstamp.net [live_orders_btcjpy]
+3	bitstamp.net(153655,5,13) uwsc wss://ws.bitstamp.net [live_orders_btcusd]
+4	bitstamp.net(153638,7,12) uwsc wss://ws.bitstamp.net [live_orders_btcjpy]
+6	bitstamp.net(153640,11,16) uwsc wss://ws.bitstamp.net [live_orders_btcusd]
+8	bitstamp.net(153642,15,20) uwsc wss://ws.bitstamp.net [live_orders_btccad]
+ticker> 

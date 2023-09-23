@@ -1,0 +1,115 @@
+==391513== Memcheck, a memory error detector
+==391513== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==391513== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==391513== Command: bin/ticker
+==391513== 
+==391515== 
+==391515== Process terminating with default action of signal 15 (SIGTERM)
+==391515==    at 0x490CC9B: pthread_sigmask@@GLIBC_2.32 (pthread_sigmask.c:45)
+==391515==    by 0x48B371C: sigprocmask (sigprocmask.c:25)
+==391515==    by 0x10BA51: bitstamp_watcher_start (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515==    by 0x10CD66: builtin_start (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515==    by 0x10D790: run_builtin (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515==    by 0x10E2FD: ticker (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515==    by 0x10A94B: main (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515== 
+==391515== HEAP SUMMARY:
+==391515==     in use at exit: 29,842 bytes in 12 blocks
+==391515==   total heap usage: 26 allocs, 14 frees, 34,280 bytes allocated
+==391515== 
+==391515== 4 bytes in 2 blocks are still reachable in loss record 1 of 10
+==391515==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==391515==    by 0x10C77B: sll_to_stra (str_link_list.c:88)
+==391515==    by 0x10CCF1: builtin_start (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515==    by 0x10D790: run_builtin (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515==    by 0x10E2FD: ticker (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515==    by 0x10A94B: main (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515== 
+==391515== 22 bytes in 1 blocks are still reachable in loss record 2 of 10
+==391515==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==391515==    by 0x10B83E: dr_get_avail_input (deque_reader.c:57)
+==391515==    by 0x10E1AE: ticker (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515==    by 0x10A94B: main (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515== 
+==391515== 24 bytes in 1 blocks are still reachable in loss record 3 of 10
+==391515==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==391515==    by 0x10AD28: table_init (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515==    by 0x10E005: ticker (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515==    by 0x10A94B: main (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515== 
+==391515== 32 bytes in 1 blocks are still reachable in loss record 4 of 10
+==391515==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==391515==    by 0x10B6E5: dr_init (deque_reader.c:24)
+==391515==    by 0x10AFBD: add_new_entry (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515==    by 0x10DF60: start_cli (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515==    by 0x10E07D: ticker (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515==    by 0x10A94B: main (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515== 
+==391515== 32 bytes in 1 blocks are still reachable in loss record 5 of 10
+==391515==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==391515==    by 0x10B6E5: dr_init (deque_reader.c:24)
+==391515==    by 0x10AFBD: add_new_entry (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515==    by 0x10CE31: builtin_start (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515==    by 0x10D790: run_builtin (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515==    by 0x10E2FD: ticker (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515==    by 0x10A94B: main (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515== 
+==391515== 32 bytes in 2 blocks are still reachable in loss record 6 of 10
+==391515==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==391515==    by 0x10C713: sll_to_stra (str_link_list.c:82)
+==391515==    by 0x10CCF1: builtin_start (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515==    by 0x10D790: run_builtin (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515==    by 0x10E2FD: ticker (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515==    by 0x10A94B: main (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515== 
+==391515== 1,024 bytes in 1 blocks are still reachable in loss record 7 of 10
+==391515==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==391515==    by 0x48EFC23: _IO_file_doallocate (filedoalloc.c:101)
+==391515==    by 0x48FED5F: _IO_doallocbuf (genops.c:347)
+==391515==    by 0x48FDFDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+==391515==    by 0x48FC754: _IO_new_file_xsputn (fileops.c:1243)
+==391515==    by 0x48FC754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+==391515==    by 0x48F0B1C: fputs (iofputs.c:38)
+==391515==    by 0x10A8CD: cli_watcher_send (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515==    by 0x10E105: ticker (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515==    by 0x10A94B: main (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515== 
+==391515== 4,096 bytes in 1 blocks are still reachable in loss record 8 of 10
+==391515==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==391515==    by 0x10B718: dr_init (deque_reader.c:27)
+==391515==    by 0x10AFBD: add_new_entry (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515==    by 0x10DF60: start_cli (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515==    by 0x10E07D: ticker (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515==    by 0x10A94B: main (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515== 
+==391515== 4,096 bytes in 1 blocks are still reachable in loss record 9 of 10
+==391515==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==391515==    by 0x10B718: dr_init (deque_reader.c:27)
+==391515==    by 0x10AFBD: add_new_entry (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515==    by 0x10CE31: builtin_start (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515==    by 0x10D790: run_builtin (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515==    by 0x10E2FD: ticker (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515==    by 0x10A94B: main (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515== 
+==391515== 20,480 bytes in 1 blocks are still reachable in loss record 10 of 10
+==391515==    at 0x484DA83: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==391515==    by 0x10AD5B: table_init (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515==    by 0x10E005: ticker (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515==    by 0x10A94B: main (in /home/reaovyd/Desktop/cse320/jacchong/hw4/bin/ticker)
+==391515== 
+==391515== LEAK SUMMARY:
+==391515==    definitely lost: 0 bytes in 0 blocks
+==391515==    indirectly lost: 0 bytes in 0 blocks
+==391515==      possibly lost: 0 bytes in 0 blocks
+==391515==    still reachable: 29,842 bytes in 12 blocks
+==391515==         suppressed: 0 bytes in 0 blocks
+==391515== 
+==391515== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==391513== 
+==391513== HEAP SUMMARY:
+==391513==     in use at exit: 0 bytes in 0 blocks
+==391513==   total heap usage: 32 allocs, 32 frees, 42,596 bytes allocated
+==391513== 
+==391513== All heap blocks were freed -- no leaks are possible
+==391513== 
+==391513== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
